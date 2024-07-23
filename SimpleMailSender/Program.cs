@@ -12,7 +12,7 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddScoped<IEmailService, EmailService>();
-builder.Services.Configure<EmailServiceDetails>(builder.Configuration.GetSection("EmailDetails"));
+builder.Services.Configure<EmailDetails>(builder.Configuration.GetSection("EmailDetails"));
 
 
 

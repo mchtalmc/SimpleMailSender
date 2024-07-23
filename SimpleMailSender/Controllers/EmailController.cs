@@ -10,6 +10,12 @@ namespace SimpleMailSender.Controllers
 	public class EmailController : ControllerBase
 	{
 		private readonly IEmailService _emailService;
+
+		public EmailController(IEmailService emailService)
+		{
+			_emailService = emailService;
+		}
+
 		[HttpPost("SendEmail")]
 		public IActionResult SendEmail(EmailDto request)
 		{

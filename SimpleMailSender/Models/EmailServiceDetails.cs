@@ -1,6 +1,6 @@
 ﻿namespace SimpleMailSender.Models
 {
-	public class EmailServiceDetails
+	public class EmailDetails
 	{
         public string EmailHost { get; set; }
         public string EmailUsername { get; set; }

@@ -9,9 +9,9 @@ namespace SimpleMailSender.Services.EmailService
 	public class EmailService : IEmailService
 	{
 		//private readonly IConfiguration _configuration;
-		private readonly IOptions<EmailServiceDetails> _emailOptions;
+		private readonly IOptions<EmailDetails> _emailOptions;
 
-		public EmailService(/*IConfiguration configuration,*/ IOptions<EmailServiceDetails> emailOptions)
+		public EmailService(/*IConfiguration configuration,*/ IOptions<EmailDetails> emailOptions)
 		{
 			//_configuration = configuration;
 			_emailOptions = emailOptions;
